@@ -3,182 +3,753 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Event & Wedding Planner</title>
-  <meta name="description" content="Elegant event & wedding planner landing website." />
+  <title>WeddingPlanner.io | Luxury Wedding & Event Curators</title>
+  <meta name="description" content="Award-winning luxury wedding planner and bespoke event management. Turning your dream celebrations into timeless memories." />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans for Luxury Look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Announcement Bar -->
+  <div class="top-banner">
+    <div class="container banner-inner">
+      <span>✨ Now Booking for 2026–2027 Wedding Season | Get a Free 1-on-1 Consultation Call</span>
+      <a href="#contact" class="banner-link">Claim Offer &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
   <header class="header" id="header">
-    <div class="container nav">
-      <a href="#" class="brand">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <span class="brand-icon">💍</span>
         <span class="brand-text">wedding<span class="brand-accent">Planner</span></span>
       </a>
 
       <nav class="desktop-nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact" class="btn primary">Contact</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Book Consultation</a>
       </nav>
 
-      <button id="menuBtn" class="menu-btn" aria-label="Open menu">
-        ☰
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
       </button>
     </div>
 
+    <!-- Mobile Navigation Drawer -->
     <nav id="mobileMenu" class="mobile-nav">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact" class="btn primary">Contact</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#packages" class="mob-link">Packages</a>
+      <a href="#gallery" class="mob-link">Gallery</a>
+      <a href="#testimonials" class="mob-link">Stories</a>
+      <a href="#faq" class="mob-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary mob-link" style="text-align:center;">Book Consultation</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home" aria-label="Hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="eyebrow">Boutique Event & Wedding Planners</p>
-      <h1 class="headline">Turning Moments into<br/>Timeless Memories</h1>
-      <p class="subhead">From intimate gatherings to grand celebrations, we curate soulful experiences with detail, design, and delight.</p>
-      <div class="actions">
-        <a href="#services" class="btn primary">Explore Services</a>
-        <a href="#contact" class="btn ghost">Book Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container grid-2">
-      <div class="about-img-wrap">
-        <img src="img/photo-1522673607200-164d1b6ce486.avif"
-             alt="Planner with couple" class="about-img">
-      </div>
-      <div>
-        <h2 class="section-title">Crafting Stories Through Celebrations</h2>
-        <p class="muted">
-          We are a boutique studio blending aesthetics with seamless execution. Our team orchestrates venues, décor, entertainment,
-          and guest experiences—so you can savor the moment.
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span> Voted India's Top Boutique Wedding Studio
+        </div>
+        <h1 class="hero-title reveal">
+          Turning Magical Moments into <br/><span class="text-gradient">Timeless Memories</span>
+        </h1>
+        <p class="hero-subtext reveal">
+          From intimate royal ceremonies to breathtaking destination extravaganzas, we curate soulful celebrations with bespoke design, seamless hospitality, and effortless elegance.
         </p>
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">250+</div>
-            <div class="stat-label">Events Managed</div>
+        
+        <div class="hero-actions reveal">
+          <a href="#packages" class="btn btn-primary">
+            <span>Explore Packages</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-glass">Book Consultation</a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero-stats-ribbon reveal">
+          <div class="ribbon-item">
+            <strong>350+</strong>
+            <span>Weddings Managed</span>
           </div>
-          <div class="stat">
-            <div class="stat-num">8 yrs</div>
-            <div class="stat-label">Experience</div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <strong>10+ Yrs</strong>
+            <span>Industry Excellence</span>
           </div>
-          <div class="stat">
-            <div class="stat-num">4.9★</div>
-            <div class="stat-label">Client Rating</div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <strong>4.9 ★</strong>
+            <span>500+ Couple Reviews</span>
+          </div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <strong>100%</strong>
+            <span>Stress-Free Guarantee</span>
           </div>
         </div>
-        <a href="#gallery" class="btn outline">See Our Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="image-stack">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                   alt="Elegant wedding setup" class="about-img-main" loading="lazy">
+              <div class="about-floating-card">
+                <span class="card-icon">👑</span>
+                <div>
+                  <strong>Bespoke Quality</strong>
+                  <p>Every wedding is custom designed from scratch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-info reveal">
+            <span class="section-tag">WHO WE ARE</span>
+            <h2 class="section-title">We Don’t Just Plan Events, We Weave Fairy Tales.</h2>
+            <p class="section-desc">
+              Every couple has a unique love story, and your celebration should be a reflection of your journey. With a blend of architectural stage design, world-class culinary coordination, and flawless hospitality, we take the stress away so you can soak in every golden moment.
+            </p>
+
+            <div class="features-list">
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <h4>End-to-End Vendor Curation</h4>
+                  <p>Handpicked caterers, photographers, stylists, and floral artists at negotiated best rates.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <h4>Dedicated Day-of Concierge</h4>
+                  <p>A professional on-ground team managing timelines, guests, and unexpected needs.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <h4>Transparent & Fixed Budgets</h4>
+                  <p>No hidden surprise fees. Real-time cost tracking from initial moodboard to final reception.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-outline">Meet Your Planner &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Services -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">WHAT WE DO</span>
+          <h2 class="section-title">Our Signature Services</h2>
+          <p class="section-desc">Tailored planning packages engineered with meticulous detail and creative soul.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">💒</div>
+            <h3>Royal & Luxury Weddings</h3>
+            <p>Complete execution of traditional, fusion, and contemporary Indian weddings with heritage grandeur.</p>
+            <ul class="service-bullets">
+              <li>Mandap & Stage Architecture</li>
+              <li>Baraat & Sangeet Choreography</li>
+              <li>Ritual & Hospitality Logistics</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">✈️</div>
+            <h3>Destination Weddings</h3>
+            <p>From Udaipur palaces to Goa beach resorts and international scenic destinations.</p>
+            <ul class="service-bullets">
+              <li>Venue Scouting & Bookings</li>
+              <li>Charter, Travel & Guest Transfers</li>
+              <li>Welcome Kits & Welcome Parties</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">🌸</div>
+            <h3>Floral & Theme Scenography</h3>
+            <p>Custom 3D moodboards, experiential lighting, botanical arches, and opulent tablescapes.</p>
+            <ul class="service-bullets">
+              <li>Exotic Fresh Flower Installations</li>
+              <li>Atmospheric Lighting & FX</li>
+              <li>Custom Photobooths & Lounges</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">🎶</div>
+            <h3>Entertainment & Artists</h3>
+            <p>Curating renowned DJs, celebrity performers, folk troupes, anchor hosts, and live bands.</p>
+            <ul class="service-bullets">
+              <li>Celebrity & Band Bookings</li>
+              <li>Sound Engineering & Concert Lighting</li>
+              <li>Curated After-Party Experiences</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">🍽️</div>
+            <h3>Gourmet Catering Curation</h3>
+            <p>Crafting multi-cuisine menus with master chefs, live interactive counters, and custom bar menus.</p>
+            <ul class="service-bullets">
+              <li>Global & Regional Menu Curation</li>
+              <li>Artisanal Dessert & Chaat Stations</li>
+              <li>Mixology & Custom Signature Drinks</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">📸</div>
+            <h3>Cinematography & Styling</h3>
+            <p>Documenting raw emotions through high-fashion photography, drone cinema, and couture styling.</p>
+            <ul class="service-bullets">
+              <li>4K Drone & Cinematic Films</li>
+              <li>Bridal Trousseau & Lookbook Styling</li>
+              <li>Same-Day Teaser Edits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="section packages-section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">PROFESSIONAL PLANNING &amp; DESIGN FEES</span>
+          <h2 class="section-title">Agency Hiring &amp; Management Retainers</h2>
+          <p class="section-desc">Transparent professional fee tiers for hiring our dedicated planning directors, designers, and on-ground execution team.</p>
+        </div>
+
+        <div class="packages-grid">
+          
+          <!-- Silver Package -->
+          <div class="package-card reveal">
+            <div class="pkg-header">
+              <span class="pkg-badge">ON-GROUND COORDINATION</span>
+              <h3>Silver Day-Of Management</h3>
+              <p class="pkg-desc">For couples who did the bookings but want our professional team to orchestrate vendors &amp; guests on the wedding day.</p>
+              <div class="pkg-price">₹1,99,000 <span class="pkg-duration">/ management fee</span></div>
+            </div>
+            <ul class="pkg-features">
+              <li>✓ 4 Weeks Prior Handover &amp; Review</li>
+              <li>✓ Master Itinerary &amp; Timeline Blueprint</li>
+              <li>✓ 4 Senior On-Ground Coordinators</li>
+              <li>✓ Vendor Coordination &amp; Queue Management</li>
+              <li>✓ Emergency Kit &amp; Guest Helpdesk</li>
+              <li>✗ 3D Decor Designing &amp; Stage Moodboards</li>
+              <li>✗ Travel &amp; Flight Logistics Booking</li>
+            </ul>
+            <button class="btn btn-outline w-full select-pkg-btn" data-package="Silver Day-Of Management">Hire Silver Team</button>
+          </div>
+
+          <!-- Gold Package (Featured) -->
+          <div class="package-card featured reveal">
+            <div class="featured-ribbon">MOST POPULAR</div>
+            <div class="pkg-header">
+              <span class="pkg-badge">END-TO-END CURATION</span>
+              <h3>Gold Complete Planning</h3>
+              <p class="pkg-desc">Comprehensive 360° wedding design &amp; planning from initial concept moodboards to the final reception party.</p>
+              <div class="pkg-price">₹4,49,000 <span class="pkg-duration">/ full planning retainer</span></div>
+            </div>
+            <ul class="pkg-features">
+              <li>✓ Full 6–12 Months Dedicated Planning</li>
+              <li>✓ Custom 3D Moodboards &amp; Stage Design</li>
+              <li>✓ Vendor Sourcing at Negotiated Trade Rates</li>
+              <li>✓ 8 Dedicated On-Ground Coordinators</li>
+              <li>✓ Menu Tasting &amp; Hospitality Management</li>
+              <li>✓ RSVP &amp; Guest Tracking Portal</li>
+              <li>✓ Live Budget Tracker &amp; Invoice Auditing</li>
+            </ul>
+            <button class="btn btn-primary w-full select-pkg-btn" data-package="Gold Complete Planning">Hire Gold Team</button>
+          </div>
+
+          <!-- Platinum Package -->
+          <div class="package-card reveal">
+            <div class="pkg-header">
+              <span class="pkg-badge">ROYAL &amp; DESTINATION</span>
+              <h3>Platinum Royal Destination</h3>
+              <p class="pkg-desc">Ultimate luxury management for multi-day destination celebrations across palaces, forts, and beach resorts.</p>
+              <div class="pkg-price">₹8,99,000 <span class="pkg-duration">/ royal destination retainer</span></div>
+            </div>
+            <ul class="pkg-features">
+              <li>✓ Multi-Day &amp; Multi-Venue Production</li>
+              <li>✓ Destination Logistics, Airport &amp; Charters</li>
+              <li>✓ 15+ Specialized Production Crew</li>
+              <li>✓ Bespoke Trousseau &amp; Couture Stylist</li>
+              <li>✓ Celebrity &amp; Artist Management</li>
+              <li>✓ VIP Hospitality &amp; Concierge Suite</li>
+              <li>✓ 24/7 Dedicated Wedding Director</li>
+            </ul>
+            <button class="btn btn-outline w-full select-pkg-btn" data-package="Platinum Royal Destination">Hire Platinum Team</button>
+          </div>
+
+        </div>
+
+        <p class="text-center reveal" style="font-size: 0.88rem; color: #64748b; margin-top: 32px; max-width: 780px; margin-inline: auto;">
+          💡 <strong>Agency Transparency Guarantee:</strong> Retainers cover complete planning, theme architecture, negotiations &amp; on-ground management. All third-party venue/catering bills are billed directly at trade rates with zero hidden markups.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filterable Gallery + Lightbox Modal -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">OUR PORTFOLIO</span>
+          <h2 class="section-title">Moments of Pure Celebration</h2>
+          <p class="section-desc">Filter through our real weddings and experiential decor archives.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mandap">Mandap & Rituals</button>
+          <button class="filter-btn" data-filter="destination">Destination</button>
+          <button class="filter-btn" data-filter="decor">Floral & Decor</button>
+          <button class="filter-btn" data-filter="sangeet">Sangeet & Party</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <div class="gallery-card" data-category="mandap" data-caption="Royal Heritage Mandap in Udaipur Palace">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" 
+                 alt="Royal Mandap setup" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Mandap & Rituals</span>
+              <h4>Royal Heritage Mandap</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="destination" data-caption="Sunset Beach Wedding at South Goa">
+            <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80" 
+                 alt="Destination Beach Wedding" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Destination</span>
+              <h4>Sunset Beach Wedding, Goa</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="decor" data-caption="Botanical Canopy & Candlelit Banquet">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" 
+                 alt="Floral Tablescape and Decor" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Floral & Decor</span>
+              <h4>Enchanted Forest Dining</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="sangeet" data-caption="Electrifying Neon Sangeet Night">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80" 
+                 alt="Sangeet Party Celebration" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Sangeet & Party</span>
+              <h4>Grand Sangeet & Concert Stage</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="mandap" data-caption="Lotus Floral Floating Mandap">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" 
+                 alt="Floating Mandap" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Mandap & Rituals</span>
+              <h4>Lotus Water Mandap</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="destination" data-caption="Royal Haveli Entrance with Folk Troupes">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80" 
+                 alt="Jaipur Haveli Wedding" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Destination</span>
+              <h4>Jaipur Palace Procession</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="decor" data-caption="Golden Marigold & Mirror Photobooth">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                 alt="Mehendi Decor" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Floral & Decor</span>
+              <h4>Boho Mehendi Oasis</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-category="sangeet" data-caption="Sparkler Send-off & Grand Reception">
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80" 
+                 alt="Grand Couple Entry" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Sangeet & Party</span>
+              <h4>Grand Reception Fireworks</h4>
+              <span class="zoom-icon">🔍 View Fullscreen</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+      <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Enlarged Wedding Photo">
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+      </div>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <!-- Testimonials / Stories -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">LOVE STORIES</span>
+          <h2 class="section-title">Words From Our Cherished Couples</h2>
+          <p class="section-desc">Real experiences from families who trusted us with their biggest day.</p>
+        </div>
+
+        <div class="testimonials-slider-wrap reveal">
+          <div class="testimonials-grid" id="testimonialTrack">
+            
+            <div class="testimonial-card">
+              <div class="test-rating">★★★★★</div>
+              <p class="test-quote">
+                "WeddingPlanner made our 3-day Jaipur royal wedding feel effortless. From the baraat entry with vintage cars to our customized mandap decor, everything was beyond what we imagined!"
+              </p>
+              <div class="test-author">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Ananya & Siddharth" class="author-img">
+                <div>
+                  <strong>Ananya & Siddharth</strong>
+                  <span>Destination Wedding at Fairmont Jaipur</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="test-rating">★★★★★</div>
+              <p class="test-quote">
+                "Their budget calculator and transparent accounting saved us thousands! We had zero stress during the ceremonies because their day-of team handled every small detail."
+              </p>
+              <div class="test-author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Rohan & Tanya" class="author-img">
+                <div>
+                  <strong>Rohan & Tanya</strong>
+                  <span>City Wedding at Taj Palace</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="test-rating">★★★★★</div>
+              <p class="test-quote">
+                "The floral design was jaw-dropping. Every single guest complimented the dining experience and smooth logistics. Thank you for creating memories of a lifetime!"
+              </p>
+              <div class="test-author">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Pooja & Sameer" class="author-img">
+                <div>
+                  <strong>Pooja & Sameer</strong>
+                  <span>Beach Celebration in Goa</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="section faq-section">
+      <div class="container faq-container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Everything You Need To Know</h2>
+          <p class="section-desc">Got questions about timelines, budgets, and planning? We've got answers.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>How far in advance should we book your team?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>For high-season weddings (October to March) and destination weddings, we recommend booking 6 to 12 months in advance to secure top venues and artists. For intimate or city events, 2 to 4 months is also feasible.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you work with our pre-selected vendors?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! We love collaborating with your preferred caterers, photographers, or decorators. We take over communications and vendor briefing so you don't have to manage them.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does your pricing & payment schedule work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We work with clear, milestone-based payments (e.g., 25% on booking, 50% across planning phases, and final 25% on event week). All vendor costs are direct, with no hidden markups.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you handle out-of-station destination weddings?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we specialize in destination weddings across Udaipur, Jaipur, Goa, Jim Corbett, Kerala, Dubai, and Bali, managing travel, hospitality, room allocations, and local vendor sourcing.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What happens if unexpected weather issues occur on the wedding day?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Every outdoor event we design always includes a mandatory Rain & Wind Plan B (waterproof structures, indoor ballroom backups, and swift relocations) prepared in advance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Booking Form -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Details -->
+          <div class="contact-info-col reveal">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title">Let’s Plan Your Dream Celebration</h2>
+            <p class="section-desc">
+              Have a wedding date in mind or need expert direction? Schedule your complimentary consultation. Our planning directors will guide you through themes, venues, and custom curation.
+            </p>
+
+            <div class="contact-cards">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="info-card">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <strong>Studio Locations</strong>
+                  <p>111, Rose Avenue, Gwalior &amp; New Delhi</p>
+                </div>
+              </a>
+
+              <a href="tel:+919876543210" class="info-card">
+                <div class="info-icon">📞</div>
+                <div class="info-text">
+                  <strong>Call Directly</strong>
+                  <p>+91 98765 43210 / +91 87654 32109</p>
+                </div>
+              </a>
+
+              <a href="mailto:hello@weddingplanner.io" class="info-card">
+                <div class="info-icon">✉️</div>
+                <div class="info-text">
+                  <strong>Email Inquiries</strong>
+                  <p>hello@weddingplanner.io</p>
+                </div>
+              </a>
+
+              <div class="info-card">
+                <div class="info-icon">⏰</div>
+                <div class="info-text">
+                  <strong>Working Hours</strong>
+                  <p>Mon – Sat: 10:00 AM – 7:30 PM (IST)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="contact-form-col reveal">
+            <form id="weddingForm" class="luxury-form" novalidate>
+              <div class="form-header-box">
+                <h3 class="form-heading">Book A Consultation</h3>
+                <p class="form-subtext">Share your celebration details and we’ll get back to you within 24 hours.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="clientName">Full Name <span class="req">*</span></label>
+                  <input type="text" id="clientName" name="name" placeholder="e.g. Rohani Dangi" required />
+                </div>
+                <div class="form-field">
+                  <label for="clientPhone">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="clientPhone" name="phone" placeholder="+91 98765 43210" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="clientEmail">Email Address <span class="req">*</span></label>
+                  <input type="email" id="clientEmail" name="email" placeholder="you@example.com" required />
+                </div>
+                <div class="form-field">
+                  <label for="eventTypeSelect">Event Type</label>
+                  <select id="eventTypeSelect" name="eventType">
+                    <option value="Royal Palace Wedding">Royal Palace Wedding</option>
+                    <option value="Destination Beach Wedding">Destination Beach Wedding</option>
+                    <option value="Classic City Wedding">Classic City Wedding</option>
+                    <option value="Intimate Celebration">Intimate Celebration</option>
+                    <option value="Sangeet & Cocktail Night">Sangeet & Cocktail Night</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="eventDate">Tentative Date</label>
+                  <input type="date" id="eventDate" name="eventDate" />
+                </div>
+                <div class="form-field">
+                  <label for="packageSelect">Preferred Package</label>
+                  <select id="packageSelect" name="package">
+                    <option value="Gold Complete Planning">Gold Complete Planning (Recommended)</option>
+                    <option value="Silver Day-Of Coordination">Silver Day-Of Coordination</option>
+                    <option value="Platinum Royal Destination">Platinum Royal Destination</option>
+                    <option value="Custom Plan">Custom Bespoke Plan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="clientMessage">Tell Us About Your Vision</label>
+                <textarea id="clientMessage" name="message" rows="3" placeholder="Expected guests, preferred venue or city, theme ideas..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full submit-btn" id="submitBtn">
+                <span>Send Wedding Inquiry &rarr;</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-icon">💍</span>
+          <span class="brand-text">wedding<span class="brand-accent">Planner</span></span>
+        </a>
+        <p class="footer-tagline">Crafting soulful celebrations and unforgettable memories since 2016.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+          <a href="#" class="social-icon" aria-label="Pinterest">📌</a>
+          <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+          <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Pricing Plans</a></li>
+          <li><a href="#gallery">Real Weddings</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#contact">Udaipur Palaces</a></li>
+          <li><a href="#contact">Goa Beach Resorts</a></li>
+          <li><a href="#contact">Jaipur Forts</a></li>
+          <li><a href="#contact">Kerala Backwaters</a></li>
+          <li><a href="#contact">Dubai & International</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe for trend forecasts, moodboards & wedding planning checklists.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to WeddingPlanner newsletter!');">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-primary">&rarr;</button>
+        </form>
       </div>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="section soft-bg">
-    <div class="container">
-      <div class="center">
-        <h2 class="section-title">Our Signature Services</h2>
-        <p class="muted">Tailored planning with creative direction and flawless delivery.</p>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <div class="icon">💞</div>
-          <h3>Weddings</h3>
-          <p>End-to-end planning, décor, invitations, logistics, and guest experience.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🏢</div>
-          <h3>Corporate Events</h3>
-          <p>Offsites, launches, award nights with production and AV support.</p>
-        </div>
-        <div class="card">
-          <div class="icon">✈️</div>
-          <h3>Destination Planning</h3>
-          <p>Venue scouting, travel, hospitality for celebrations across the globe.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🌸</div>
-          <h3>Decor & Styling</h3>
-          <p>Floral, lighting, tablescapes and personalized design language.</p>
-        </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>© 2026 WeddingPlanner.io. Crafted with ❤️ by <a href="https://github.com/rohanidangi4" target="_blank" rel="noopener noreferrer" style="color: #ffd580; font-weight: 700; text-decoration: underline;">Rohani Dangi</a></p>
+        <p><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- Gallery -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <div class="center">
-        <h2 class="section-title">Gallery</h2>
-        <p class="muted">A glimpse of our favorite moments.</p>
-      </div>
-
-      <div class="gallery">
-        <!-- Add/replace images as needed -->
-        <img class="gl-img" src="img/download.jpg" alt="Gallery 1">
-        <img class="gl-img" src="img/download (1).jpg" alt="Gallery 2">
-        <img class="gl-img" src="img/download (2).jpg" alt="Gallery 3">
-        <img class="gl-img" src="img/photo-1522673607200-164d1b6ce486.avif" alt="Gallery 4">
-        <img class="gl-img" src="img/images.jpg" alt="Gallery 5">
-        <img class="gl-img" src="img/images (1).jpg" alt="Gallery 6">
-      </div>
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast-notification">
+    <div class="toast-icon">✨</div>
+    <div class="toast-body">
+      <strong id="toastTitle">Inquiry Received!</strong>
+      <p id="toastMessage">Thank you! Our wedding director will reach out within 24 hours.</p>
     </div>
-  <!-- Contact -->
-  <section id="contact" style="margin-top: 5%;">
-    <div class="container grid-contact">
-      <div>
-        <h2 class="section-title">Plan Your Event</h2>
-        <p class="muted">Tell us about your dream celebration and we’ll get back within 24 hours.</p>
-        <div class="contact-lines">
-          <p>✉️ hello@weddingPlanner.com</p>
-          <p>🕒 Mon–Sat, 10:00 AM – 7:00 PM</p>
-          <p>📍 111, Rose Avenue, Gwalior</p>
-        </div>
-      </div>
+    <button class="toast-close" id="toastClose">&times;</button>
+  </div>
 
-      <form id="contactForm" class="form">
-        <div class="field">
-          <label>Full Name</label>
-          <input type="text" name="name" placeholder="Rohani Dangi" required>
-        </div>
-        <div class="field">
-          <label>Email</label>
-          <input type="email" name="email" placeholder="you@example.com" required>
-        </div>
-        <div class="field">
-          <label>Event Type</label>
-          <select name="type" required>
-            <option value="">Choose…</option>
-            <option>Wedding</option>
-            <option>Engagement</option>
-            <option>Birthday</option>
-            <option>Corporate</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>Event Date</label>
-          <input type="date" name="date" required>
-        </div>
-        <div class="field full">
-          <label>Message</label>
-          <textarea name="message" rows="4" placeholder="Tell us about your event…" required></textarea>
-        </div>
-        <button type="submit" class="btn primary">Send Inquiry</button>
-        <span id="formStatus" class="form-status"></span>
-      </form>
-    </div>
-  </section>
+  <!-- Floating Quick Actions -->
+  <a href="#contact" class="floating-whatsapp" aria-label="Chat with Us" title="Direct Consultation">
+    💬
+  </a>
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    ↑
+  </button>
 
   <script src="script.js"></script>
 </body>
